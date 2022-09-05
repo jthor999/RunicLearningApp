@@ -18,5 +18,26 @@ namespace RunicLearningApp
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
+
+        
+    }
+
+    class TextHolder
+    {
+        public string displayText;
+        public void DescriptionText(int txt)
+        {
+            string chosen_txt = "runic learning";
+
+            switch (txt) 
+            {
+                case 0: chosen_txt = "The Fehu Rune";
+                    break;
+            }
+
+
+            displayText = chosen_txt;
+        }
+
     }
 }
