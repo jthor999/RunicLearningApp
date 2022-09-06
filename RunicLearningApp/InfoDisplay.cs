@@ -12,9 +12,10 @@ namespace RunicLearningApp
 {
     public partial class InfoDisplay : Form
     {
-        
 
-        TextHolder tx = new TextHolder();
+        public int select_number;
+        public int info_or_rune; //will load info slide or rune slides
+        public Image img;
 
         public InfoDisplay()
         {
@@ -24,14 +25,50 @@ namespace RunicLearningApp
         }
 
        private void InfoDisplay_Load() 
-        { 
-            Label DisplayLabel = new Label();
-            DisplayLabel.Location = new Point(199, 104);
-            DisplayLabel.Text = tx.displayText;
+        {
+            TextHolder tx = new TextHolder();
+            // tx.DescriptionText(select_number);
+
+            if (info_or_rune == 0)
+            {
+                runedescript.Text = tx.DescriptionText(select_number);
+                RuneInfoDisplay.Image = img;
+            }else if (info_or_rune == 1) 
+            {
+                runedescript.Text = tx.InfoText();
+            }
+
+            
+            
         }
-        
-
 
         
+
+        private void InfoDisplay_Shown(object sender, EventArgs e)
+        {
+            InfoDisplay_Load();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {//return home btn
+            this.Hide();
+            Form1 f1 = new Form1();
+            f1.Show();
+        }
+
+        private void InfoDisplay_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void RuneInfoDisplay_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

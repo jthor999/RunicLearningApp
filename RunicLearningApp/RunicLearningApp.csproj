@@ -74,6 +74,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -87,6 +88,84 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fehu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uruz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thuriaz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ansuz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Raidho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Raidho1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gebo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wunjo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hagalaz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Naudiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\isza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eihwaz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perthro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\algiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swoilo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiwaz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Berkanon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ehwaz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mannaz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Laguz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ingwaz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\othalan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dagaz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kaunaz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
